@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    color: #003049;
+    font-family: Arial;
+}
+body {
+    margin: 0;
+    padding: 0;
+}
+#title {
+    text-align: center;
+}
+.container header {
+    position: relative;
+}
+#newTodo {
+    width: 100%;
+    display: flex;
+}
+span{
+    text-align: center;
+    margin-right: 15px;
+}
+#newTodo input,textarea {
+    width: 100%;
+    padding: 12px 48px 12px 12px;
+    border-radius: 8px;
+    border: 1px solid black;
+    margin-right: 15px;
+    font-size: 25px;
+}
+#tasksList {
+    margin-top: 10px;
+}
+#tasksList ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#tasksList li {
+    background-color: white;
+    padding: 12px 40px 12px 12px;
+    font-size: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
+    margin-bottom: 5px;
+    border-bottom: 0px solid rgba(0, 0, 0, 0.05);
+    transition: 250ms border ease-in-out;
+}
+#tasksList li .editInfo {
+    margin-left: 5px;
+    visibility: hidden;
+    font-size: 10px;
+    opacity: 0.5;
+}
+#tasksList li.done {
+    color: #999999;
+    opacity: 0.5;
+}
+#tasksList li.done .content {
+    text-decoration: line-through;
+}
+#tasksList i {
+    font-size: 25px;
+}
+#tasksList .doneAction {
+    margin-right: 5px;
+}
+#tasksList li:hover .deleteAction {
+    opacity: 1;
+}
+#tasksList li:hover .editInfo {
+    visibility: visible;
+}
+.editor {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.editor input {
+    width: calc(100% - 30px);
+    padding: 0 0 0 3px;
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+}
+input[type="text"]{
+    padding: 5px 0px 5px 30px;
+    border-radius: 5px;
+    border: none;
+    font-size: 20px;
+}
+h1{
+    margin: .9rem 0;
+}
